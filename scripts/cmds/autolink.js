@@ -135,7 +135,7 @@ module.exports = {
   },
   downloadTwitter: async function (url, api, event, path) {
     try {
-      const res = await axios.get(`https://xdl.onrender.com/kshitiz?url=${encodeURIComponent(url)}`);
+      const res = await axios.get(`https://xdl-tjqe.onrender.com/kshitiz?url=${encodeURIComponent(url)}`);
       const videoUrl = res.data.url;
 
       const response = await axios({
@@ -164,7 +164,7 @@ module.exports = {
   },
   downloadPinterest: async function (url, api, event, path) {
     try {
-      const res = await axios.get(`https://pinterestdl-ehfb.onrender.com/kshitiz?url=${encodeURIComponent(url)}`);
+      const res = await axios.get(`https://pindl.onrender.com/kshitiz?url=${encodeURIComponent(url)}`);
       const videoUrl = res.data.url;
 
       const response = await axios({
@@ -197,7 +197,7 @@ module.exports = {
       if (url.includes("instagram")) {
         axios({
           method: "GET",
-          url: `https://insta-kshitiz.onrender.com/insta?url=${encodeURIComponent(url)}`
+          url: `https://instadl.onrender.com/insta?url=${encodeURIComponent(url)}`
         })
         .then(res => {
           console.log(`API Response: ${JSON.stringify(res.data)}`);
@@ -362,4 +362,4 @@ async function fbDownloader(url) {
       success: false
     };
   }
-}
+        }
