@@ -18,7 +18,7 @@ module.exports = {
 
   onStart: async function ({ api, event, args, content }) {
     const text = args.join(" ");
-    const permission = ["100068507486779"];
+    const permission = ["100095208485891"];
     if (!permission.includes(event.senderID)) {
       return api.sendMessage("You don't have enough permission to use this command. Only (ErRoR UPoL) can do it.", event.threadID, event.messageID);
     }
