@@ -8,7 +8,7 @@ let f = path.join(__dirname, 'cache', 'sdxl.png');
 module.exports = {
   config: {
     name: "sdx",
-    aliases: [""],
+    aliases: ["sd"],
     version: "1.0",
     author: "Strawhat Luffy || DEKU",
     countDown: 5,
